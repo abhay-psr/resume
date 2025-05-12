@@ -1,12 +1,21 @@
 \documentclass{mycv}
 \input{cv_data/202505_data.tex}
 \input{colors/color_set1.tex}
-\usepackage[a4paper, top=10mm, bottom=10mm, right=5mm, left=5mm]{geometry}
+\usepackage[a4paper, top=5mm, bottom=10mm, right=5mm, left=5mm]{geometry}
 \usepackage{lipsum}
+\usepackage{tikz}
+\usepackage[absolute,overlay]{textpos} % for absolute postiioning, overlay over others
 \pagecolor{pageBG}
 \begin{document}
 
-\center{\colorbox{white}{\huge\sffamily\scshape  \textcolor{black}{name}}} \\
+% have a background colored box with absolute position
+% \begin{tikzpicture}[remember picture, overlay] % remember layout, enables use of page.north east etc
+    % \fill[blue!80] (current page.north west) rectangle (\textwidth, 0.5cm);
+% \end{tikzpicture}
+% \vspace{-1cm}
+% dafdf
+
+\center{\colorbox{white!20}{\Huge\sffamily\scshape  \textcolor{cyan}{\name}}} \\
 % \center{\colorbox{primaryVariant}{\huge\sffamily\scshape  \textcolor{primary}{\name}}} \\
 \mobile \email
 \section{\name}
