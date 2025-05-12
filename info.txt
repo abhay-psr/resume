@@ -1,0 +1,27 @@
+titlesec commands
+
+There are two general commands:
+
+ \titleformat{<command>}[<shape>]{<format>}{<label>}{<sep>}{<before-code>}[<after-code>]
+
+where [<shape>] and [<after-code>] are optional parameters, and:
+
+    <command> is the sectioning command to be redefined: \part, \chapter, \section, \subsection, \subsubsection, \paragraph or \subparagraph.
+    <shape> is sectioning paragraph shape; possible values are: hang, block, display, runin, leftmargin, rightmargin, drop, wrap and frame.
+    <format> is the format to be applied to the title, label, and text; for example \normalfont\Large\bfseries
+    <label> specify sectioning label.
+    <sep> is the horizontal separation between label and title body and it must be a length and not be empty.
+    <before-code> is code preceding the title body.
+    <after-code> is code following the title body.
+
+and
+
+ \titlespacing{<command>}{<left>}{<before-sep>}{<after-sep>}
+
+where:
+
+    <left> increases the left margin.
+    <before-sep> is the vertical space before the title.
+    <after-sep> is the separation between title and non-sectioning text.
+
+the starred version of this command (\titlespacing*) kills the indentation of the paragraph following the title. 
